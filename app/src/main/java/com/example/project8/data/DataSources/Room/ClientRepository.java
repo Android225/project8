@@ -6,7 +6,7 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 
 import com.example.project8.data.DataSources.Room.Dao.ClientDao;
-import com.example.project8.data.DataSources.Room.Entity.Database.ClientDatabase;
+import com.example.project8.data.DataSources.Room.Database.ClientDatabase;
 import com.example.project8.data.DataSources.Room.Entity.Client;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.project8.data.DataSources.Room.Entity.Database;
+package com.example.project8.data.DataSources.Room.Database;
 
 import android.content.Context;
 import android.util.Log;
