@@ -11,7 +11,7 @@ import android.util.Log;
 
 import com.example.project8.R;
 import com.example.project8.UI.ViewModels.ClientVM;
-import com.example.project8.data.DataSources.Room.Entity;
+import com.example.project8.data.DataSources.Repository.Repository;
 import com.example.project8.data.DataSources.RoomDat;
 import com.example.project8.data.DataSources.appSpecificStorage;
 import com.example.project8.data.DataSources.externalStorage;
@@ -28,17 +28,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        appSpecificStorage a = new appSpecificStorage();
-        a.appSpec(getApplication());
-
-        externalStorage b = new externalStorage();
-        b.externalStor();
-
-        RoomDat c = new RoomDat();
-        c.roomDatt(getApplication());
-
-        SharedPreferences d = new SharedPreferences();
-        d.SharPref(getApplication());
+        Repository al = new Repository();
+        al.apsl(getApplication());
+        al.extl(getApplication());
+        al.rool(getApplication());
+        al.sharl(getApplication());
 
     }
 }
