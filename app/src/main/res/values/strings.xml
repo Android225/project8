@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">project8</string>
+    <string name="third">Third</string>
+    <string name="second">Second</string>
 </resources>

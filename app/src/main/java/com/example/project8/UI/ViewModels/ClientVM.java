@@ -1,4 +1,4 @@
-package com.example.project8.UI.ViewModels.;
+package com.example.project8.UI.ViewModels;
 
 import android.app.Application;
 import android.util.Log;
