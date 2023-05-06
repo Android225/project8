@@ -1,17 +1,19 @@
 package com.example.project8.data.DataSources;
 
+import android.app.Application;
 import android.util.Log;
 
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.project8.UI.ViewModels.ClientVM;
+import com.example.project8.data.DataSources.Room.Entity.Client;
 
 public class RoomDat {
 
-    public  void roomDatt() {
+    public  void roomDatt(Application application) {
         // room
-        ClientVM clientVM = new ViewModelProvider(this).get(ClientVM.class);
-        clientVM.getAllClient().observe(this, clients -> {
+        ClientVM clientVM = new ViewModelProvider(application).get(ClientVM.class);
+        clientVM.getAllClient().observe(application, clients -> {
                     try {
                         clients.add(new Client("Marta"));
                         clients.add(new Client("Potter"));

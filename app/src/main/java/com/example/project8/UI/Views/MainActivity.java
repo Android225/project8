@@ -21,13 +21,7 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
-    public boolean isExternalStorageWritable() {
-        String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state)) {
-            return true;
-        }
-        return false;
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,16 +29,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         appSpecificStorage a = new appSpecificStorage();
-        a.appSpec();
+        a.appSpec(getApplication());
 
         externalStorage b = new externalStorage();
         b.externalStor();
 
         RoomDat c = new RoomDat();
-        c.roomDatt();
+        c.roomDatt(getApplication());
 
         SharedPreferences d = new SharedPreferences();
-        d.externalStor();
+        d.SharPref(getApplication());
 
     }
 }

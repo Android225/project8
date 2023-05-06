@@ -1,13 +1,13 @@
-package com.example.a8.data.ClientDB;
+package com.example.project8.data.DataSources.Room;
 
 import android.app.Application;
 import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.a8.data.ClientDB.Client;
-import com.example.a8.data.ClientDB.ClientDao;
-import com.example.a8.data.ClientDB.ClientDatabase;
+import com.example.project8.data.DataSources.Room.Dao.ClientDao;
+import com.example.project8.data.DataSources.Room.Entity.Database.ClientDatabase;
+import com.example.project8.data.DataSources.Room.Entity.Client;
 
 import java.util.List;
 
